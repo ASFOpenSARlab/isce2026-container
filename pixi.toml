@@ -1,0 +1,35 @@
+[workspace]
+authors = ["segallagher <segallagher@alaska.edu>"]
+channels = ["conda-forge", "pyrocko"]
+name = "earthscope_insar"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+aria-tools = "*"
+asf_search = "*"
+autorift = "*"
+boto3 = "*"
+hyp3_sdk = "*"
+ipykernel = "*"
+ipympl = "*"
+isce2 = "*"
+libgdal-hdf5 = "*"
+libgdal-netcdf = "*"
+mintpy = "*"
+netcdf4 = "*"
+pip = "*"
+pv = "*"
+pyrocko = "*"
+sardem = "*"
+rioxarray = "*"
+rasterio = "*"
+sentineleof = "*"
+numpy = ">=1.24.0"
+
+[tool.pixi.pypi-dependencies]
+url-widget = "*"
+okada-wrapper = "==18.12.7.3"
+kite = "*"
