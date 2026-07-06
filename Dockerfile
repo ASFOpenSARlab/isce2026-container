@@ -1,5 +1,7 @@
 FROM ghcr.io/asfopensarlab/deployment-opensarlab-container_sar:v1.3.2
 
+USER root
+
 ARG PIXI_MANIFEST_PATH=/tmp/pixi.toml
 
 ## Build Pixi environment
@@ -20,3 +22,5 @@ RUN pixi run --manifest-path ${PIXI_MANIFEST_PATH} -e default \
 COPY setup_notebook_shell.py /tmp/setup_notebook_shell.py
 
 RUN python /tmp/setup_notebook_shell.py --manifest-path ${PIXI_MANIFEST_PATH}
+
+USER jovyan
