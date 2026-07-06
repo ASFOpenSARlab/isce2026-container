@@ -9,8 +9,11 @@ COPY pixi.toml ${PIXI_MANIFEST_PATH}
 RUN pixi install --manifest-path ${PIXI_MANIFEST_PATH}
 
 ## Register Pixi environment with ipykernel
-
-RUN pixi run --manifest-path ${PIXI_MANIFEST_PATH} -e default python -m ipykernel install --user --name default --display-name earthscope_insar
+RUN pixi run --manifest-path ${PIXI_MANIFEST_PATH} -e default \
+    python -m ipykernel install \
+    --prefix=/usr/local \
+    --name default \
+    --display-name "earthscope_insar"
 
 ## Make Bash in jupyter notebook run using pixi
 
