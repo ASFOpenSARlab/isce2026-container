@@ -28,6 +28,7 @@ rioxarray = "*"
 rasterio = "*"
 sentineleof = "*"
 numpy = ">=1.24.0"
+compass = "*"
 
 [tool.pixi.pypi-dependencies]
 url-widget = "*"
