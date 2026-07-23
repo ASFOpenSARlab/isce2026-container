@@ -30,6 +30,7 @@ sentineleof = "*"
 numpy = ">=1.24.0"
 compass = "*"
 isce3 = "*"
+snaphu = "*"
 
 [tool.pixi.pypi-dependencies]
 url-widget = "*"
