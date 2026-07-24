@@ -32,7 +32,7 @@ compass = "*"
 isce3 = "*"
 snaphu = "*"
 burst2safe = "*"
-whirlwind-insar = ">=0.8.8"
+whirlwind-insar = ">=0.8.0"
 
 [tool.pixi.pypi-dependencies]
 url-widget = "*"
